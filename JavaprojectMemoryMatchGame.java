@@ -170,7 +170,7 @@ public class JavaprojectMemoryMatchGame extends Application{
          });
       
           
-      //NewGame Object creates the first Game
+      //NewGame Object creates the first Game and playagain button
       NewGame makeGame= new NewGame("Play Again?");
       
       //Create game button
