@@ -5,6 +5,7 @@
 * Name: Moungsung Im, Amos Omobude
 * Assignment #: JavaFXproject
 */
+//GIT Link:https://github.com/msunglim/CS-1302-JavaProject-MemoryMatch-Moungsung-Im-and-Amos
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -111,7 +112,7 @@ public class JavaprojectMemoryMatchGame extends Application{
             
             bpau1.setVideoMSI(vp1,vv1); 
             //set BorderPane that is used to place its contents in proper spaces
-
+         
             bp.setCenter(bpau1.getBorderPane());    
          });
       
@@ -136,7 +137,7 @@ public class JavaprojectMemoryMatchGame extends Application{
             
             bpau2.setVideoAMS(vp2,vv2); 
             //set BorderPane that is used to place its contents in proper spaces
-     
+         
             bp.setCenter(bpau2.getBorderPane());    
          });
    
@@ -423,6 +424,9 @@ class NewGame extends Button{
    private Game p=new Game();;
    private boolean first=true;
    
+   //no arg constructor
+   public NewGame(){
+   }
    //receive String name to set Button bt's name
    public NewGame(String name){
       bt= new Button(name);
@@ -596,6 +600,9 @@ class TextEX extends Text{
 class AuthorPane extends BorderPane{
    BorderPane bpau;
    
+   //no arg constructor
+   public AuthorPane(){
+   }
    //receive integer value and if it is 1, generate author 1's information else if it is 2, generate author 2's information. there is no more authors than 2.
    public AuthorPane(int n){
       bpau= new BorderPane();
@@ -653,7 +660,7 @@ class AuthorPane extends BorderPane{
       vb.setStyle("-fx-background-color: yellow");
         //create Label and set size and font of Label in order of name,education stuatus, and hoblfirsty
    
-      Label [] l= { new Label("Amos Omobude"),new Label("Educational status:   Bachelors degree: Computer Science "), new Label("Hobby:  AMOS HB"), new Label("Nationality:   USA")};
+      Label [] l= { new Label("Amos Omobude"),new Label("Educational status:   Bachelors degree: Computer Science "), new Label("Hobby:  Playing soccer, Swimming, and reading the Bible"), new Label("Nationality:   USA")};
          
       for( Label inform : l){
          inform.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 20));
