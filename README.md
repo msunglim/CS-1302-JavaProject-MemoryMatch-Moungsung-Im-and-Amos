@@ -13,3 +13,4 @@ The rule is simple. It will show you the answers for first 3 seconds, and hide t
 
 If you click PlayAgain button, it resets the answers and re-generate it with different orders and shows it for 5 seconds and hide them.
 
+GIT LINK :https://github.com/msunglim/CS-1302-JavaProject-MemoryMatch-Moungsung-Im-and-Amos
